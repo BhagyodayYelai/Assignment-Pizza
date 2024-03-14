@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="Shortcut Icon" href="Special Pizza.jpeg" type="image">
+</head>
+<body>
+    <header>
+        <h1>Pizza Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Order a Pizza</h2>
+            <form action="/submit_order" method="post">
+                <label for="size">Size:</label><br>
+                <select id="size" name="size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+                <label for="crust">Crust:</label><br>
+                <select id="crust" name="crust" required>
+                    <option value="thin">Thin</option>
+                    <option value="hand_tossed">Hand-Tossed</option>
+                    <option value="stuffed">Stuffed</option>
+                </select><br>
+                <label for="toppings">Toppings:</label><br>
+                <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+                <label for="pepperoni"><img src="Pepperoni-pizza.jpg" alt="Pepperoni" width="150" height="150"> Pepperoni</label><br>
+                <input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+                <label for="sausage"><img src="sausage.jpg" alt="Sausage" width="150" height="150"> Sausage</label><br>
+                <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+                <label for="mushrooms"><img src="mushroom.jpg" alt="Mushrooms" width="150" height="150"> Mushrooms</label><br>
+                <input type="checkbox" id="onions" name="toppings[]" value="onions">
+                <label for="onions"><img src="onions.jpg" alt="Onions" width="150" height="150"> Onions</label><br>
+                <input type="checkbox" id="green_peppers" name="toppings[]" value="green_peppers">
+                <label for="green_peppers"><img src="green pepper.jpg" alt="Green Peppers" width="125" height="125"> Green Peppers</label><br>
+                <input type="submit" value="Submit Order">
+            </form>
+        </section>
+        <section>
+            <h2>Our Specialties</h2>
+            <img src="Special.jpg" alt="Specialty Pizza 1" width="150" height="150">
+            <p>Cheff's Special</p>
+            <img src="Special Piz.jpeg" alt="Specialty Pizza 2" width="150" height="150">
+            <p>Cheesy Farmhouse Pizza</p>
+            <img src="Special Pizza.jpeg" alt="Specialty Pizza 3" width="150" height="150">
+            <p>Cheesy Meat Load Pizza</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Pizza Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
